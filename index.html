@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода в один клік</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-card">
+        <h2>Погода</h2>
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Введіть назву міста...">
+            <button id="search-btn">Пошук</button>
+        </div>
+
+        <div id="weather-info" class="weather-info hidden">
+            <h3 id="city-name">Київ</h3>
+            <img id="weather-icon" src="" alt="Погода">
+            <div id="temperature" class="temp">-- °C</div>
+            <div id="description" class="desc">хмарно</div>
+            <div class="details">
+                <div>Вологість: <span id="humidity">--</span>%</div>
+                <div>Вітер: <span id="wind">--</span> м/с</div>
+            </div>
+        </div>
+
+        <div id="error-message" class="error hidden">Місто не знайдено. Спробуйте ще раз!</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
